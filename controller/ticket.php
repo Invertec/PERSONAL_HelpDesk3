@@ -345,6 +345,7 @@
             break;
 
         case "listar_filtro":
+            $cat_id = isset($_POST["cat_id"]) ? intval($_POST["cat_id"]) : 0;
             $datos=$ticket->filtrar_ticket($_POST["tick_titulo"],$_POST["cat_id"],$_POST["prio_id"]);
             $data= Array();
             foreach($datos as $row){
