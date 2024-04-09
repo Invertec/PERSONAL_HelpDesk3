@@ -336,14 +336,14 @@ function listardatatable(tick_titulo,cat_id,prio_id,est_id){
             dataType : "json",
             data:{ tick_titulo:tick_titulo,cat_id:cat_id,prio_id:prio_id,est_id:est_id},
             error: function(e){
-                console.log(e.responseText);
+                /* console.log(e.responseText); */
             }
         },
-        /* "bDestroy": true,
+        "bDestroy": true,
         "responsive": true,
         "bInfo":true,
         "iDisplayLength": 10,
-        "autoWidth": false, */
+        "autoWidth": false,
         "language": {
             "sProcessing":     "Procesando...",
             "sLengthMenu":     "Mostrar _MENU_ registros",
