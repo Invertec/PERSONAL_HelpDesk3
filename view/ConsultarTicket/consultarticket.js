@@ -170,7 +170,7 @@ $(document).ready(function(){
 );
 
 function ver(tick_id){
-    window.open('http://192.168.1.196:80/view/DetalleTicket/?ID='+ tick_id +'');
+    window.open('http://192.168.1.196/view/DetalleTicket/?ID='+ tick_id +'');
 }
 
 function asignar(tick_id){
@@ -368,7 +368,7 @@ function listardatatable(tick_titulo,cat_id,prio_id,est_id){
                 "sSortDescending": ": Activar para ordenar la columna de manera descendente"
             }
         }     
-    })/* .DataTable().ajax.reload() */;
+    }).DataTable().ajax.reload();
 }
 
 function listardatatablecomp(tick_titulo,prio_id){
