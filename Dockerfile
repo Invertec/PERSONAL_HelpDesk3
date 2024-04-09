@@ -1,13 +1,14 @@
-# Usa la imagen base de PHP 8.0
-FROM php:8.0-cli
-# Establece el directorio de trabajo en /app
-WORKDIR /app
+# Usa una imagen de PHP 8.0 con Apache
+FROM php:8.0-apache
 
-# Copia todos los archivos de tu aplicación al contenedor
-COPY . /app
+# Instala las extensiones PHP necesarias
+RUN docker-php-ext-install pdo mysqli pdo_mysql zip
 
-# Expone el puerto 80 (puedes cambiarlo según sea necesario)
+# Copia tu aplicación PHP al directorio raíz del servidor web en el contenedor
+COPY . /var/www/html/
+
+# Expone el puerto 80 (el puerto predeterminado de Apache)
 EXPOSE 80
 
-# Ejecuta el servidor PHP integrado para servir la aplicación
-CMD ["php", "-S", "0.0.0.0:80"]
+# Ejecuta el servidor Apache
+CMD ["apache2-foreground"]
