@@ -7,8 +7,8 @@
         protected function Conexion(){
             try {
                 //Local
-				$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=bd1","root",""); 
-                /*$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=bd3","administrador","Invertek24_");*/
+				/* $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=bd1","root",""); */ 
+                $conectar = $this->dbh = new PDO("mysql:local=192.168.1.196;dbname=bd1","administrador","Invertek24_");
  
 				return $conectar;
 			} catch (Exception $e) {
@@ -23,7 +23,7 @@
 
         public static function ruta(){
             //Local
-            return "http://localhost:80/PERSONAL_HelpDesk3/";
+            return "http://192.168.1.196/";
 
 		}
 

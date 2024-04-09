@@ -170,7 +170,7 @@ $(document).ready(function(){
 );
 
 function ver(tick_id){
-    window.open('http://localhost:80/PERSONAL_HelpDesk3ig/view/DetalleTicket/?ID='+ tick_id +'');
+    window.open('http://192.168.1.196/view/DetalleTicket/?ID='+ tick_id +'');
 }
 
 function asignar(tick_id){
