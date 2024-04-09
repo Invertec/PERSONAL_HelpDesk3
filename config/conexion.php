@@ -37,7 +37,6 @@
     // Crear una instancia de la clase Conectar
     $conexion = new Conectar();
     // Realizar la conexión a la base de datos
-    $conexion->Conexion();
     // Establecer la codificación de caracteres
     $conexion->set_names();
 ?>
