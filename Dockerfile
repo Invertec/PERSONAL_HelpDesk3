@@ -2,7 +2,7 @@
 FROM php:8.0-apache
 
 # Instala las extensiones PHP necesarias
-RUN docker-php-ext-install pdo mysqli pdo_mysql zip
+RUN docker-php-ext-install pdo mysqli pdo_mysql
 
 # Copia tu aplicación PHP al directorio raíz del servidor web en el contenedor
 COPY . /var/www/html/
