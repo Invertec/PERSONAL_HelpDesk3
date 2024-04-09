@@ -28,15 +28,4 @@
 		}
 
     }
-
-    // Establecer encabezados CORS
-    header("Access-Control-Allow-Origin: *");
-    header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-    header("Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Requested-With");
-
-    // Crear una instancia de la clase Conectar
-    $conexion = new Conectar();
-    // Realizar la conexión a la base de datos
-    // Establecer la codificación de caracteres
-    $conexion->set_names();
 ?>
