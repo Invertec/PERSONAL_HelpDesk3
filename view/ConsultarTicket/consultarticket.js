@@ -170,7 +170,7 @@ $(document).ready(function(){
 );
 
 function ver(tick_id){
-    window.open('http://192.168.1.196/view/DetalleTicket/?ID='+ tick_id +'');
+    window.open('http://helpdesk.invertec.cl:80/view/DetalleTicket/?ID='+ tick_id +'');
 }
 
 function asignar(tick_id){
